@@ -1,6 +1,6 @@
 {
   "Dart async function": {
-    "prefix": "afn",
+    "prefix": ["afn", "afun", "afunc"],
     "description": "Scaffold an async function",
     "body": ["Future<${1}> ${2}(${3} ${4}) async {", "\t${5}", "}", "\n${0}"]
   },
