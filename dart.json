@@ -79,6 +79,11 @@
     "prefix": "ifel",
     "body": ["if (${1}) {", "\t${2}", "} else {", "\t${3}", "}", "\n${0}"]
   },
+  "Dart import package": {
+    "description": "Import a Dart package",
+    "prefix": ["imp", "import"],
+    "body": ["import 'package:${1}/${2:${1}}.dart';", "\n${0}"]
+  },
   "Dart inherited class": {
     "description": "Scaffold an inherited class",
     "prefix": ["clse", "clsex", "classextends"],
@@ -89,6 +94,11 @@
       "}",
       "\n${0}"
     ]
+  },
+  "Dart log": {
+    "description": "Log toString contents of a variable",
+    "prefix": "log",
+    "body": ["print('${1}: ${$1.toString()}');", "\n${0}"]
   },
   "Dart switch 1 case": {
     "description": "Scaffold a switch statement with 1 case",

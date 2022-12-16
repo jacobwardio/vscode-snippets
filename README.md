@@ -18,6 +18,7 @@ Collection of my Visual Studio Code snippets
 | Dart if block                             | `if`                                | Scaffold an if block                            |
 | Dart if-elif-else block                   | `ifelif`                            | Scaffold a if-elif-else                         |
 | Dart if-else block                        | `ifel`                              | Scaffold an if-else block                       |
+| Dart import package                       | `imp`, `import`                     | Import a Dart package                           |
 | Dart inherited class                      | `clse`, `clsex`, `classextends`     | Scaffold an inherited class                     |
 | Dart switch 1 case                        | `sw`, `sw1`, `switch`, `switch1`    | Scaffold a switch statement with 1 case         |
 | Dart switch 2 cases                       | `sw2`, `switch2`                    | Scaffold a switch statement with 2 cases        |
