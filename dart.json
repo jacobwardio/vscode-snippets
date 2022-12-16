@@ -5,7 +5,7 @@
     "body": ["Future<${1}> ${2}(${3} ${4}) async {", "\t${5}", "}", "\n${0}"]
   },
   "Dart async unit test": {
-    "description": "Scaffold and async unit test",
+    "description": "Scaffold an async unit test",
     "prefix": "aut",
     "body": ["test('should ${1}', () async {", "\t${2}", "});", "\n${0}"]
   },

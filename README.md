@@ -7,7 +7,7 @@ Collection of my Visual Studio Code snippets
 | Name                                      | Prefix(es)                          | Description                                     |
 | :---------------------------------------- | :---------------------------------- | :---------------------------------------------- |
 | Dart async function                       | `afn`, `afun`, `afunc`              | Scaffold an async function                      |
-| Dart async unit test                      | `aut`                               | Scaffold and async unit test                    |
+| Dart async unit test                      | `aut`                               | Scaffold an async unit test                     |
 | Dart class implementing an abstract class | `clsi`, `clsimp`, `classimplements` | Scaffold a class implementing an abstract class |
 | Dart class                                | `cls`, `class`                      | Scaffold a class                                |
 | Dart do-while loop                        | `do`                                | Scaffold a do-while loop                        |
