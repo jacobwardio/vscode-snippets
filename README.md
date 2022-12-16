@@ -4,6 +4,8 @@ Collection of my Visual Studio Code snippets
 
 ## Dart
 
+[`dart.json`](./dart.json)
+
 | Name                                      | Prefix(es)                          | Description                                     |
 | :---------------------------------------- | :---------------------------------- | :---------------------------------------------- |
 | Dart async function                       | `afn`, `afun`, `afunc`              | Scaffold an async function                      |
