@@ -47,7 +47,7 @@
   },
   "Dart function": {
     "description": "Scaffold a simple function",
-    "prefix": "fn",
+    "prefix": ["fn", "fun", "func"],
     "body": ["${1} ${2}(${3} ${4}) {", "\t${5}", "}", "\n${0}"]
   },
   "Dart group of unit tests": {

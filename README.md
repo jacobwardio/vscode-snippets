@@ -13,7 +13,7 @@ Collection of my Visual Studio Code snippets
 | Dart do-while loop                        | `do`                                | Scaffold a do-while loop                        |
 | Dart for loop                             | `for`                               | Scaffold a for loop                             |
 | Dart for..in loop                         | `forin`                             | Scaffold a for..in loop                         |
-| Dart function                             | `fn`                                | Scaffold a simple function                      |
+| Dart function                             | `fn`, `fun`, `func`                 | Scaffold a simple function                      |
 | Dart group of unit tests                  | `gut`                               | Scaffold a unit test group                      |
 | Dart if block                             | `if`                                | Scaffold an if block                            |
 | Dart if-elif-else block                   | `ifelif`                            | Scaffold a if-elif-else                         |
