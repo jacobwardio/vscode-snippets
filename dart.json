@@ -126,12 +126,12 @@
       "\t\t${3}",
       "\n\t\tbreak;",
       "}",
-      "\tcase ${3}: {",
-      "\t\t${4}",
+      "\tcase ${4}: {",
+      "\t\t${5}",
       "\n\t\tbreak;",
       "}",
       "\tdefault: {",
-      "\t\t${5}",
+      "\t\t${6}",
       "\n\t\tbreak;",
       "\t}",
       "}",
@@ -286,5 +286,124 @@
     "description": "Scaffold a while loop",
     "prefix": "while",
     "body": ["while(${1}){", "\t${2}", "}", "\n${0}"]
+  },
+  "Dart main": {
+    "description": "Scaffold main app entrypoint",
+    "prefix": "main",
+    "body": ["void main(${1}) {", "\t${2}", "}", "\n${0}"]
+  },
+  "Dart typedef": {
+    "description": "Scaffold a typedef",
+    "prefix": ["td", "typedef"],
+    "body": ["typedef ${1} ${2}(${3});", "\n${0}"]
+  },
+  "Dart enum": {
+    "description": "Dart enum",
+    "prefix": ["enum"],
+    "body": ["enum {", "\t${1}", "}", "\n${0}"]
+  },
+
+  "Flutter Scaffold widget": {
+    "description": "Flutter Scaffold widget",
+    "prefix": ["scaff", "scaffold"],
+    "body": [
+      "Scaffold(",
+      "\tappBar: AppBar(",
+      "\t\ttitle: ${1:const} Text('${2}'),",
+      "\t),",
+      "\tbody: ${3}",
+      ")${4}",
+      "\n${0}"
+    ]
+  },
+  "Flutter Stateful widget": {
+    "description": "Flutter Stateful widget",
+    "prefix": ["stful", "stateful"],
+    "body": [
+      "class ${1} extends StatefulWidget {",
+      "\tconst ${1}({ Key? key }) : super(key: key);",
+      "",
+      "\t@override",
+      "\tState<${1}> createState() => _${1}State();",
+      "}",
+      "",
+      "class _${1}State extends State<${1}> {",
+      "\t${2}",
+      "",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\t${3}",
+      "\t}",
+      "}",
+      "\n${0}"
+    ]
+  },
+  "Flutter Text widget": {
+    "description": "Flutter Text widget",
+    "prefix": ["txt", "text"],
+    "body": ["${1:const} Text('${2}')", "${0}"]
+  },
+  "Flutter import Material package": {
+    "description": "Import Flutter Material package",
+    "prefix": "impmat",
+    "body": ["import 'package:flutter/material.dart';"]
+  },
+  "Flutter Stateless widget": {
+    "description": "Flutter Stateless widget",
+    "prefix": ["stless", "stateless"],
+    "body": [
+      "class ${1} extends StatelessWidget {",
+      "\tconst ${1}({Key? key}) : super(key: key);",
+      "",
+      "\t@override",
+      "\tWidget build(BuildContext context){",
+      "\t\t${2}",
+      "\t}",
+      "}",
+      "\n${0}"
+    ]
+  },
+  "Flutter Container widget": {
+    "description": "Flutter Container widget",
+    "prefix": ["cont", "container"],
+    "body": ["Container(", "  child: ${1}", "${3}", ")", "\n${0}"]
+  },
+  "Flutter Center widget": {
+    "description": "Flutter Center widget",
+    "prefix": ["cent", "center"],
+    "body": ["Center(", "  child: ${1}", ")", "\n${0}"]
+  },
+  "Flutter setState": {
+    "description": "Flutter setState",
+    "prefix": ["setst", "setstate"],
+    "body": ["setState(() {", "\t${1}", "});", "\n${0}"]
+  },
+  "Flutter PopupMenuButton": {
+    "description": "Flutter PopupMenuButton",
+    "prefix": ["pumbtn", "popupmenubtn", "popupmenubutton"],
+    "body": [
+      "PopupMenuButton<Menu>(",
+      "\tonSelected: (Menu item) {",
+      "\t\t${1}",
+      "\t},",
+      "\titemBuilder: (BuildContext context) => <PopupMenuEntry<Menu>>[",
+      "\t\t${2}",
+      "\t],",
+      "\t${3}",
+      ")",
+      "\n${0}"
+    ]
+  },
+  "Flutter PopupMenuItem": {
+    "description": "Flutter PopupMenuItem",
+    "prefix": ["pumitm", "popupmenuitm", "popupmenuitem"],
+    "body": [
+      "PopupMenuItem<Menu>(",
+      "\tvalue: ${1},",
+      "\tchild: ${2},",
+      "\t${3}",
+      ")",
+      "\n${0}"
+    ]
   }
 }
